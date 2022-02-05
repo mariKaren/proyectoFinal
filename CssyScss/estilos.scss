@@ -36,7 +36,7 @@ header {
     .envios {
         width: 100%;
         height: 30px;
-        background-color: #E7B7C1;
+        background-color: $color3;
         margin-bottom: -6px;
 
         p {
@@ -68,7 +68,7 @@ header {
 
     .navbar-brand img {
         height: 70px;
-        padding-left: 67px;
+        padding-left: 80px;
     }
 
     .nav-item {
@@ -547,27 +547,16 @@ footer {
     text-align: center;
     font-family: 'Petit Formal Script', cursiva;
     font-style: italic;
-    background-color: $colorNav;
     padding-top: 0px;
-    margin-left: 400px;
-    margin-right: 400px;
     color: $cletra2;
-
-}
-
-@media only screen and (min-width:700px) and (max-width: 1250px) {
-    .tituloSeccion {
-        margin-left: 200px;
-        margin-right: 200px;
+    span{
+        background-color: $color2;
+        padding-left: 100px;
+        padding-right: 100px;
     }
+
 }
 
-@media only screen and (min-width:300px) and (max-width: 700px) {
-    .tituloSeccion {
-        margin-left: 90px;
-        margin-right: 90px;
-    }
-}
 
 
 
@@ -579,3 +568,5 @@ footer {
 @import "_productos";
 /* INICIO SECCION CONTACTO*/
 @import "_contacto";
+/* INICIO SECCION UBICACION*/
+@import "_ubicacion";

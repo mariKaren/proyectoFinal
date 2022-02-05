@@ -19,7 +19,7 @@ header {
 header .envios {
   width: 100%;
   height: 30px;
-  background-color: #E7B7C1;
+  background-color: #e8c2ca;
   margin-bottom: -6px;
 }
 
@@ -50,7 +50,7 @@ header .bg-color {
 
 .navbar .navbar-brand img {
   height: 70px;
-  padding-left: 67px;
+  padding-left: 80px;
 }
 
 .navbar .nav-item {
@@ -708,25 +708,14 @@ footer .copyRight {
   text-align: center;
   font-family: 'Petit Formal Script', cursiva;
   font-style: italic;
-  background-color: rgba(0, 0, 0, 0.15);
   padding-top: 0px;
-  margin-left: 400px;
-  margin-right: 400px;
   color: rgba(0, 0, 0, 0.7);
 }
 
-@media only screen and (min-width: 700px) and (max-width: 1250px) {
-  .tituloSeccion {
-    margin-left: 200px;
-    margin-right: 200px;
-  }
-}
-
-@media only screen and (min-width: 300px) and (max-width: 700px) {
-  .tituloSeccion {
-    margin-left: 90px;
-    margin-right: 90px;
-  }
+.tituloSeccion span {
+  background-color: #E7B7C1;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 /*INICIO SECCIONES*/
@@ -860,6 +849,7 @@ footer .copyRight {
 
 .productos {
   height: auto;
+  margin-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -992,28 +982,149 @@ footer .copyRight {
 
 /* INICIO SECCION CONTACTO*/
 .formularioContacto {
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
 }
 
-div textarea {
+.formularioContacto .form-group {
+  font-family: "Lora", serif;
+}
+
+.formularioContacto .areaTexto {
+  margin-bottom: 10px;
+}
+
+.formularioContacto .areaTexto textarea {
   height: 150px;
   width: 100%;
 }
 
-.enviar {
+.formularioContacto .enviar {
   text-align: center;
   margin-bottom: 10px;
 }
 
-.botonEnviar {
+.formularioContacto .enviar .botonEnviar {
   background-color: #e8c2ca;
   border: none;
 }
 
-.botonEnviar:hover {
+.formularioContacto .enviar .botonEnviar:hover {
   color: #e8c2ca;
   background-color: white;
   border: 2px solid #e8c2ca;
+}
+
+/* INICIO SECCION UBICACION*/
+.ubicacion {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.ubicacion .mapa {
+  width: 50%;
+}
+
+.ubicacion .mapa iframe {
+  width: 500px;
+  height: 350px;
+}
+
+.ubicacion .datosUbicacion {
+  text-align: center;
+  width: 50%;
+}
+
+.ubicacion .datosUbicacion p {
+  font-family: "Lora", serif;
+  margin-bottom: 5px;
+}
+
+.ubicacion .datosUbicacion .pLugarRetiro {
+  font-size: 25px;
+}
+
+.ubicacion .datosUbicacion .pEnvio {
+  font-size: 25px;
+}
+
+.ubicacion .datosUbicacion .pEnvio span {
+  background-color: #e8c2ca;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .ubicacion .mapa iframe {
+    width: 85%;
+    height: 400px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+  .ubicacion .mapa iframe {
+    width: 90%;
+    height: 300px;
+  }
+  .ubicacion .datosUbicacion .pEnvio span {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .ubicacion .mapa {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .ubicacion .mapa iframe {
+    width: 450px;
+    height: 250px;
+  }
+  .ubicacion .datosUbicacion {
+    width: 100%;
+  }
+  .ubicacion .datosUbicacion .pEnvio span {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+  .ubicacion .mapa {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .ubicacion .mapa iframe {
+    width: 300px;
+    height: 250px;
+  }
+  .ubicacion .datosUbicacion {
+    width: 100%;
+  }
+  .ubicacion .datosUbicacion .pLugarRetiro {
+    font-size: 20px;
+  }
+  .ubicacion .datosUbicacion .pEnvio {
+    font-size: 20px;
+  }
+  .ubicacion .datosUbicacion .pEnvio span {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 /*# sourceMappingURL=estilos.css.map */

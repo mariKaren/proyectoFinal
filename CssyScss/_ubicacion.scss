@@ -1,0 +1,137 @@
+.ubicacion {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .mapa {
+        width: 50%;
+
+        iframe {
+            width: 500px;
+            height: 350px;
+        }
+    }
+
+    .datosUbicacion {
+        text-align: center;
+        width: 50%;
+
+        p {
+            font-family: $letra;
+            margin-bottom: 5px;
+        }
+
+        .pLugarRetiro {
+            font-size: 25px;
+        }
+
+        .pEnvio {
+            font-size: 25px;
+
+            span {
+                background-color: $color3;
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+        }
+
+    }
+}
+@media only screen and (min-width:1200px){
+    .ubicacion {
+        .mapa {
+            iframe {
+                width: 85%;
+                height: 400px;
+            }
+        }
+    }
+}
+@media only screen and (min-width:768px) and (max-width: 1000px) {
+
+    .ubicacion {
+        .mapa {
+            iframe {
+                width: 90%;
+                height: 300px;
+            }
+        }
+
+        .datosUbicacion {
+            .pEnvio {
+                span {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+            }
+
+        }
+
+    }
+
+}
+
+@media only screen and (min-width:576px) and (max-width: 768px) {
+
+    .ubicacion {
+        .mapa {
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+
+            iframe {
+                width: 450px;
+                height: 250px;
+            }
+        }
+
+        .datosUbicacion {
+            width: 100%;
+            .pEnvio {
+                span {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+            }
+
+
+        }
+    }
+
+}
+
+@media only screen and (min-width:320px) and (max-width: 576px) {
+
+    .ubicacion {
+        .mapa {
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+
+            iframe {
+                width: 300px;
+                height: 250px;
+            }
+        }
+
+        .datosUbicacion {
+            width: 100%;
+
+            .pLugarRetiro {
+                font-size: 20px;
+            }
+
+            .pEnvio {
+                font-size: 20px;
+                span {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+            }
+        }
+    }
+
+}
