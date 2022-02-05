@@ -504,7 +504,19 @@ footer .copyRight {
   }
 }
 
+@media only screen and (min-width: 1250px) {
+  .carousel-inner .carousel-item {
+    height: auto;
+  }
+}
+
 /* media de HOME */
+@media only screen and (min-width: 1250px) {
+  .seleccion {
+    height: 600px;
+  }
+}
+
 @media only screen and (min-width: 576px) and (max-width: 768px) {
   .seleccion {
         grid-template-areas: "conjuntos tops" "seleccionTres seleccionTres";
@@ -735,88 +747,23 @@ footer .copyRight {
       flex-wrap: wrap;
 }
 
-.gift--card1 {
-  background-color: #e8c2ca;
+.giftCard div {
   width: 400px;
-  height: 300px;
+  height: 400px;
   margin-bottom: 50px;
   margin-top: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
-.gift--card1 p {
-  font-family: 'Lora', serif;
-  font-size: 40px;
-  text-align: center;
-  line-height: 1;
+.giftCard div img {
+  width: 100%;
+  height: auto;
 }
 
-.gift--card1 p span {
-  font-size: 25px;
-}
-
-.gift--card2 {
-  background-color: rgba(0, 0, 0, 0.15);
-  width: 400px;
-  height: 300px;
-  margin-bottom: 50px;
-  margin-top: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.gift--card2 p {
-  font-family: 'Lora', serif;
-  font-size: 40px;
-  text-align: center;
-  line-height: 1;
-}
-
-.gift--card2 p span {
-  font-size: 25px;
-}
-
-.gift--card3 {
-  background-color: #E7B7C1;
-  width: 400px;
-  height: 300px;
-  margin-bottom: 50px;
-  margin-top: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.gift--card3 p {
-  font-family: 'Lora', serif;
-  font-size: 40px;
-  text-align: center;
-  line-height: 1;
-}
-
-.gift--card3 p span {
-  font-size: 25px;
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+  .giftCard div {
+    width: 300px;
+    height: 300px;
+  }
 }
 
 /* INICIO SECCION PRODUCTOS */
