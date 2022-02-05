@@ -94,3 +94,29 @@
         }
     }
 }
+@media only screen and (min-width:768px) and (max-width: 820px){
+    .productos .short{
+        .imgProducto{
+            img{
+                width: 97%;
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width:420px) and (max-width: 576px){
+    .productos .producto{
+        height: 480px;
+    }
+    .productos .short{
+        padding-left: 100px;
+    }
+
+}
+@media only screen and (min-width:300px) and (max-width: 420px){
+    .igProd{
+        text-align: center;
+    }
+
+}
