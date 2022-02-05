@@ -1,0 +1,581 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&display=swap');
+
+
+$color1:white;
+$colorNav: rgba(0, 0, 0, 0.15);
+$colorMenu:rgba(0, 0, 0, 0.15);
+$colorMenu2:rgba(0, 0, 0, 0.30);
+$color2:#E7B7C1;
+$color3:#e8c2ca;
+$cletra1: black;
+$cletra2: rgba(0, 0, 0, 0.7);
+$cletra3:rgba(52, 58, 64, 0.7);
+$letra: 'Lora',
+serif;
+$letra2:'Merriweather',
+serif;
+$letra3:'Cormorant',
+serif;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*INICIO HEADER*/
+header {
+    height: 110px;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    margin-bottom: 0px;
+    z-index: 1000;
+
+    .envios {
+        width: 100%;
+        height: 30px;
+        background-color: #E7B7C1;
+        margin-bottom: -6px;
+
+        p {
+            margin-bottom: 0%;
+            display: inline-block;
+            font-family: $letra3;
+            font-size: 20px;
+            font-weight: bold;
+
+        }
+
+        img {
+            height: auto;
+            width: 20px;
+            padding-bottom: 2px;
+        }
+    }
+
+    .bg-color {
+        background-color: $color1;
+    }
+}
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    padding: 0%;
+    border-bottom: 5px $colorMenu solid;
+
+    .navbar-brand img {
+        height: 70px;
+        padding-left: 67px;
+    }
+
+    .nav-item {
+        width: 80px;
+
+        .nav-link {
+            width: 80%;
+
+            img {
+                width: 90%;
+            }
+        }
+
+        .dropdown-menu {
+            min-width: 70px;
+            margin: 0px;
+            padding: 0px;
+            left: -50px;
+
+            .dropdown-item {
+                width: 100%;
+                text-align: center;
+                border: 1px solid $colorMenu;
+                font-family: $letra;
+            }
+
+            .dropdown-item:hover {
+                background-color: $colorMenu;
+                color: $color1;
+            }
+        }
+    }
+}
+
+.dropdown-toggle::after {
+    color: transparent;
+}
+
+/*FIN HEADER*/
+
+body {
+    padding-top: 110px;
+}
+
+/*INICIO BODY HOME*/
+/*PORTADA*/
+.carousel-indicators {
+    background-color: $colorNav;
+    height: 15px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#pBarraCarousel {
+    position: relative;
+}
+
+.carousel-inner {
+    width: 100%;
+    height: auto;
+
+    .carousel-item {
+        height: 480px;
+
+        img {
+            width: 93%;
+            height: auto;
+        }
+    }
+
+}
+
+
+/*SECCION SELECCION*/
+
+@import "_seleccion";
+
+/*FIN SELECCION*/
+
+.redesSociales {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+
+    a {
+        text-decoration: none;
+        text-align: center;
+
+        .instagramHome {
+            padding-left: 20px;
+            height: 52px;
+            margin-bottom: 0%;
+
+            img {
+                width: 25px;
+                height: auto;
+                padding-bottom: 15px;
+            }
+
+            h1 {
+                display: inline-block;
+                font-size: 45px;
+                color: $cletra1;
+                font-family: $letra2;
+            }
+        }
+
+
+        .instagramHome:hover {
+            transform: scale(1.07);
+            transition: all 0.8s;
+        }
+    }
+
+    .instagramSeguinos {
+        font-size: 23px;
+        font-family: 'Lora', serif;
+    }
+
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    height: 200px;
+    display: grid;
+    grid-template-areas:
+        "NavFooter NavFooter"
+        "Datos Datos"
+        "copyRight copyRight";
+
+    .navFooter {
+        width: 100%;
+        text-align: center;
+        grid-area: NavFooter;
+        ul{
+            
+            li {
+                display: inline-block;
+                width: 10%;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                background-color: $colorMenu2;
+    
+                a {
+                    text-decoration: none;
+                    font-size: 16px;
+                    letter-spacing: 1px;
+                    font-family: $letra;
+                    color: $cletra1;
+                }
+            }
+        }
+        
+    }
+
+    .datosFooter {
+        grid-area: Datos;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        div {
+            img {
+                width: 20px;
+                height: auto;
+                padding-bottom: 5px;
+            }
+
+            p {
+                text-align: center;
+                font-size: 18px;
+                font-family: $letra;
+                height: 30px;
+                margin-bottom: 5px;
+                display: inline-block;
+            }
+
+        }
+
+
+    }
+
+
+    .copyRight {
+        background-color: $cletra3;
+        margin-top: 10px;
+        font-size: 16px;
+        letter-spacing: 1px;
+        font-family: $letra;
+        text-align: center;
+        grid-area: copyRight;
+    }
+}
+
+
+/* media de footer,nav y logo */
+@media only screen and (min-width:300px) and (max-width: 500px) {
+    .navbar-brand img {
+        height: 70px;
+    }
+
+    .navbar .nav-item {
+        width: 60px;
+    }
+
+    .navbar .nav-item .nav-link {
+        width: 95%;
+
+        img {
+            width: 100%;
+        }
+
+    }
+
+    .dropdown-menu {
+        left: -25px;
+    }
+
+    .dropdown-item {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    footer {
+        height: auto;
+
+        .navFooter ul li {
+            width: 25%;
+        }
+
+        .datosFooter {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+
+}
+
+@media only screen and (min-width:500px) and (max-width: 800px) {
+    footer{
+        .navFooter ul li {
+        width: 20%;
+        } 
+    }
+   
+}
+/*media portada*/
+@media only screen and (min-width:320px) and (max-width: 1150px) {
+    
+    .carousel-inner{
+        .carousel-item{
+            height: auto;
+        }
+        
+    }
+}
+
+/* media de HOME */
+
+@media only screen and (min-width:576px) and (max-width: 768px) {
+    .seleccion{
+        grid-template-areas:
+        "conjuntos tops"
+        "seleccionTres seleccionTres";
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1fr 1fr;
+        .seleccionConjuntos{
+            padding-bottom: 8px;
+            .conjuntos{
+                width: 90%;
+                height: 90%;
+
+            }
+        }
+        .seleccionTops{
+            padding-left: 0%;
+            justify-content: center;
+            .tops{
+                width: 90%;
+                height: 90%;
+            }
+        }
+    }
+    .redesSociales {
+        a .instagramHome {
+            height: auto;
+            img {
+                width: 20px;
+                height: auto;
+                padding-bottom: 10px;
+            }
+
+            h1 {
+                font-size: 35px;
+
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:416px) and (max-width: 576px) {
+    .seleccion{
+        grid-template-areas:
+        "conjuntos tops"
+        "seleccionTres seleccionTres"
+        "seleccionTres seleccionTres";
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows:repeat(3,1fr);
+        .tituloSeleccion a{
+            font-size: 30px;
+        }
+        .seleccionConjuntos{
+            padding-bottom: 8px;
+            .conjuntos{
+                width: 90%;
+                height: 90%;
+
+            }
+        }
+        .seleccionTops{
+            padding-left: 0%;
+            justify-content: center;
+            .tops{
+                width: 90%;
+                height: 90%;
+            }
+        }
+        .seleccionTres{
+            flex-wrap: wrap;
+            justify-content: center;
+            .seleccionCalzas, .seleccionRemeras, .seleccionShorts{
+                width: 50%;
+                justify-content: center;
+            }
+            .seleccionCalzas, .seleccionShorts{
+                padding-right: 10px;
+            }
+            
+        }
+    }
+
+
+
+    .redesSociales {
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        a .instagramHome {
+            height: auto;
+            img {
+                width: 20px;
+                height: auto;
+                padding-bottom: 10px;
+            }
+
+            h1 {
+                font-size: 30px;
+
+            }
+        }
+
+
+        .instagramHome:hover {
+            transform: scale(1.04);
+        }
+
+        .instagramSeguinos {
+            font-size: 18px;
+        }
+
+    }
+}
+
+
+@media only screen and (min-width:320px) and (max-width: 416px) {
+
+    .seleccion{
+        height: auto;
+        margin-top: 20px;
+        grid-template-areas:
+        "conjuntos"
+        "tops"
+        "seleccionTres" 
+        "seleccionTres"
+        "seleccionTres";
+        grid-template-columns:1fr;
+        grid-template-rows:repeat(5,150px);
+        .tituloSeleccion a{
+            font-size: 25px;
+        }
+        .seleccionConjuntos{
+            padding-bottom: 15px;
+            .conjuntos{
+                width: 70%;
+                height: 100%;
+                box-shadow: 3px 3px 3px;
+            }
+        }
+        .seleccionTops{
+            padding-left: 0%;
+            padding-bottom: 15px;
+            justify-content: center;
+            .tops{
+                width: 70%;
+                height: 100%;
+                box-shadow: 3px 3px 3px;
+            }
+        }
+        .seleccionTres{
+            flex-wrap: wrap;
+            justify-content: center;
+            .seleccionCalzas, .seleccionRemeras, .seleccionShorts{
+                width: 100%;
+                justify-content: center;
+                padding-right: 5px;
+            }
+            .seleccionCalzas .calzas{
+                width: 71.3%;
+                height: 100%;
+                box-shadow: 3px 3px 3px;
+               
+            }
+            .seleccionRemeras .remeras{
+                width: 71.3%;
+                height: 100%;
+                box-shadow: 3px 3px 3px;
+            }
+            .seleccionShorts .shorts{
+                width: 71.3%;
+                height: 100%;
+                box-shadow: 3px 3px 3px;
+            }
+            
+            
+        }
+    }
+    .redesSociales {
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        a .instagramHome {
+            height: auto;
+            img {
+                width: 15px;
+                height: auto;
+                padding-bottom: 5px;
+            }
+
+            h1 {
+                font-size: 25px;
+
+            }
+        }
+
+
+        .instagramHome:hover {
+            transform: scale(1.04);
+        }
+
+        .instagramSeguinos {
+            font-size: 18px;
+        }
+
+    }
+}
+
+
+
+/* css titulo secciones */
+
+.tituloSeccion {
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Petit Formal Script', cursiva;
+    font-style: italic;
+    background-color: $colorNav;
+    padding-top: 0px;
+    margin-left: 400px;
+    margin-right: 400px;
+    color: $cletra2;
+
+}
+
+@media only screen and (min-width:700px) and (max-width: 1250px) {
+    .tituloSeccion {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+}
+
+@media only screen and (min-width:300px) and (max-width: 700px) {
+    .tituloSeccion {
+        margin-left: 90px;
+        margin-right: 90px;
+    }
+}
+
+
+
+/*INICIO SECCIONES*/
+
+/* INICIO SECCION REGALA */
+@import "_giftcard";
+/* INICIO SECCION PRODUCTOS */
+@import "_productos";
+/* INICIO SECCION CONTACTO*/
+@import "_contacto";

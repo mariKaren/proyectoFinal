@@ -1,0 +1,150 @@
+.seleccion{
+    height: 520px;
+    background-color: $color1;
+    margin-top: 40px;
+    display: grid;
+    grid-template-areas:
+    "conjuntos tops tops"
+    "conjuntos seleccionTres seleccionTres";
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1.2fr 1fr;
+
+    .tituloSeleccion {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        
+        a {
+            font-family: $letra;
+            font-size: 40px;
+            text-decoration: none;
+            color: $color1;
+        }
+        
+        a:hover {
+        text-decoration: none;
+        }
+    }
+        
+    .shopSeleccion {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        
+        a {
+            font-family: $letra;
+            font-size: 16px;
+            text-decoration: none;
+            color: $color1;
+            border: 1px solid $color1;
+            padding: 2px;
+            margin-top: 6px;
+        }
+        
+        a:hover {
+            text-decoration: none;
+        }
+    }
+
+    .seleccionConjuntos{
+        grid-area: conjuntos;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .conjuntos {
+            width: 90%;
+            height: 95%;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../multimedia/conjuntos.jpeg);
+            background-size: cover;
+            box-shadow: 5px 5px 5px;
+        }
+    }
+    .seleccionTops{
+        grid-area: tops;
+        padding-left: 8px;
+        padding-bottom: 8px;
+        display: flex;
+        align-items: center;
+
+        .tops {
+            width: 97%;
+            height: 90%;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../multimedia/tops.jpeg);
+            background-size: cover;
+            background-position-y:center;
+            background-position-x:center;
+            box-shadow: 5px 5px 5px;
+        }
+
+    }
+    .seleccionTres{
+        grid-area: seleccionTres;
+        width: 100%;
+        padding-left: 8px;
+        display:flex;
+        
+        .seleccionCalzas{
+            width: 33%;
+            display: flex;
+            align-items: center;
+            padding-bottom: 15px;
+    
+            .calzas {
+                width: 91%;
+                height: 100%;
+                background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../multimedia/calzas.jpeg);
+                background-size: cover;
+                box-shadow: 5px 5px 5px;
+              
+            }
+    
+        }
+        .seleccionShorts{
+            width: 33%;
+            padding-bottom: 15px;
+            padding-left: 2px;
+            display: flex;
+            align-items: center;
+    
+            .shorts {
+                width: 91%;
+                height: 100%;
+                background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../multimedia/shorts.jpeg);
+                background-size: cover;
+                background-position: center;
+                box-shadow: 5px 5px 5px;
+            }
+    
+        }
+        .seleccionRemeras{
+            width: 34%;
+            padding-bottom: 15px;
+            padding-left: 2px;
+            display: flex;
+            align-items: center;
+            .remeras{
+                width: 91%;
+                height: 100%;
+                background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../multimedia/remeras.jpeg);
+                background-size: cover;
+                background-position: center;
+                box-shadow: 5px 5px 5px;
+
+            }
+        }
+    }
+    .conjuntos:hover,
+    .tops:hover,
+    .calzas:hover,
+    .remeras:hover,
+    .shorts:hover {
+        transform: scale(1.04);
+        transition: all 0.7s;
+    }
+
+}

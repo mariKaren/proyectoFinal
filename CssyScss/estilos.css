@@ -1,0 +1,998 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*INICIO HEADER*/
+header {
+  height: 110px;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  margin-bottom: 0px;
+  z-index: 1000;
+}
+
+header .envios {
+  width: 100%;
+  height: 30px;
+  background-color: #E7B7C1;
+  margin-bottom: -6px;
+}
+
+header .envios p {
+  margin-bottom: 0%;
+  display: inline-block;
+  font-family: "Cormorant", serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+header .envios img {
+  height: auto;
+  width: 20px;
+  padding-bottom: 2px;
+}
+
+header .bg-color {
+  background-color: white;
+}
+
+.navbar {
+  width: 100%;
+  height: 80px;
+  padding: 0%;
+  border-bottom: 5px rgba(0, 0, 0, 0.15) solid;
+}
+
+.navbar .navbar-brand img {
+  height: 70px;
+  padding-left: 67px;
+}
+
+.navbar .nav-item {
+  width: 80px;
+}
+
+.navbar .nav-item .nav-link {
+  width: 80%;
+}
+
+.navbar .nav-item .nav-link img {
+  width: 90%;
+}
+
+.navbar .nav-item .dropdown-menu {
+  min-width: 70px;
+  margin: 0px;
+  padding: 0px;
+  left: -50px;
+}
+
+.navbar .nav-item .dropdown-menu .dropdown-item {
+  width: 100%;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  font-family: "Lora", serif;
+}
+
+.navbar .nav-item .dropdown-menu .dropdown-item:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+  color: white;
+}
+
+.dropdown-toggle::after {
+  color: transparent;
+}
+
+/*FIN HEADER*/
+body {
+  padding-top: 110px;
+}
+
+/*INICIO BODY HOME*/
+/*PORTADA*/
+.carousel-indicators {
+  background-color: rgba(0, 0, 0, 0.15);
+  height: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+#pBarraCarousel {
+  position: relative;
+}
+
+.carousel-inner {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-inner .carousel-item {
+  height: 480px;
+}
+
+.carousel-inner .carousel-item img {
+  width: 93%;
+  height: auto;
+}
+
+/*SECCION SELECCION*/
+.seleccion {
+  height: 520px;
+  background-color: white;
+  margin-top: 40px;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "conjuntos tops tops" "conjuntos seleccionTres seleccionTres";
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 1.2fr 1fr;
+      grid-template-rows: 1.2fr 1fr;
+}
+
+.seleccion .tituloSeleccion {
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.seleccion .tituloSeleccion a {
+  font-family: "Lora", serif;
+  font-size: 40px;
+  text-decoration: none;
+  color: white;
+}
+
+.seleccion .tituloSeleccion a:hover {
+  text-decoration: none;
+}
+
+.seleccion .shopSeleccion {
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.seleccion .shopSeleccion a {
+  font-family: "Lora", serif;
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 2px;
+  margin-top: 6px;
+}
+
+.seleccion .shopSeleccion a:hover {
+  text-decoration: none;
+}
+
+.seleccion .seleccionConjuntos {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: conjuntos;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.seleccion .seleccionConjuntos .conjuntos {
+  width: 90%;
+  height: 95%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../multimedia/conjuntos.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../multimedia/conjuntos.jpeg);
+  background-size: cover;
+  -webkit-box-shadow: 5px 5px 5px;
+          box-shadow: 5px 5px 5px;
+}
+
+.seleccion .seleccionTops {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: tops;
+  padding-left: 8px;
+  padding-bottom: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.seleccion .seleccionTops .tops {
+  width: 97%;
+  height: 90%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../multimedia/tops.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../multimedia/tops.jpeg);
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: center;
+  -webkit-box-shadow: 5px 5px 5px;
+          box-shadow: 5px 5px 5px;
+}
+
+.seleccion .seleccionTres {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: seleccionTres;
+  width: 100%;
+  padding-left: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.seleccion .seleccionTres .seleccionCalzas {
+  width: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 15px;
+}
+
+.seleccion .seleccionTres .seleccionCalzas .calzas {
+  width: 91%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../multimedia/calzas.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../multimedia/calzas.jpeg);
+  background-size: cover;
+  -webkit-box-shadow: 5px 5px 5px;
+          box-shadow: 5px 5px 5px;
+}
+
+.seleccion .seleccionTres .seleccionShorts {
+  width: 33%;
+  padding-bottom: 15px;
+  padding-left: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.seleccion .seleccionTres .seleccionShorts .shorts {
+  width: 91%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../multimedia/shorts.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../multimedia/shorts.jpeg);
+  background-size: cover;
+  background-position: center;
+  -webkit-box-shadow: 5px 5px 5px;
+          box-shadow: 5px 5px 5px;
+}
+
+.seleccion .seleccionTres .seleccionRemeras {
+  width: 34%;
+  padding-bottom: 15px;
+  padding-left: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.seleccion .seleccionTres .seleccionRemeras .remeras {
+  width: 91%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../multimedia/remeras.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../multimedia/remeras.jpeg);
+  background-size: cover;
+  background-position: center;
+  -webkit-box-shadow: 5px 5px 5px;
+          box-shadow: 5px 5px 5px;
+}
+
+.seleccion .conjuntos:hover,
+.seleccion .tops:hover,
+.seleccion .calzas:hover,
+.seleccion .remeras:hover,
+.seleccion .shorts:hover {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+}
+
+/*FIN SELECCION*/
+.redesSociales {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.redesSociales a {
+  text-decoration: none;
+  text-align: center;
+}
+
+.redesSociales a .instagramHome {
+  padding-left: 20px;
+  height: 52px;
+  margin-bottom: 0%;
+}
+
+.redesSociales a .instagramHome img {
+  width: 25px;
+  height: auto;
+  padding-bottom: 15px;
+}
+
+.redesSociales a .instagramHome h1 {
+  display: inline-block;
+  font-size: 45px;
+  color: black;
+  font-family: "Merriweather", serif;
+}
+
+.redesSociales a .instagramHome:hover {
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.redesSociales .instagramSeguinos {
+  font-size: 23px;
+  font-family: 'Lora', serif;
+}
+
+/* FOOTER */
+footer {
+  width: 100%;
+  height: 200px;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "NavFooter NavFooter" "Datos Datos" "copyRight copyRight";
+}
+
+footer .navFooter {
+  width: 100%;
+  text-align: center;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: NavFooter;
+}
+
+footer .navFooter ul li {
+  display: inline-block;
+  width: 10%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+footer .navFooter ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-family: "Lora", serif;
+  color: black;
+}
+
+footer .datosFooter {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: Datos;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .datosFooter div img {
+  width: 20px;
+  height: auto;
+  padding-bottom: 5px;
+}
+
+footer .datosFooter div p {
+  text-align: center;
+  font-size: 18px;
+  font-family: "Lora", serif;
+  height: 30px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+footer .copyRight {
+  background-color: rgba(52, 58, 64, 0.7);
+  margin-top: 10px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-family: "Lora", serif;
+  text-align: center;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: copyRight;
+}
+
+/* media de footer,nav y logo */
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+  .navbar-brand img {
+    height: 70px;
+  }
+  .navbar .nav-item {
+    width: 60px;
+  }
+  .navbar .nav-item .nav-link {
+    width: 95%;
+  }
+  .navbar .nav-item .nav-link img {
+    width: 100%;
+  }
+  .dropdown-menu {
+    left: -25px;
+  }
+  .dropdown-item {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  footer {
+    height: auto;
+  }
+  footer .navFooter ul li {
+    width: 25%;
+  }
+  footer .datosFooter {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 800px) {
+  footer .navFooter ul li {
+    width: 20%;
+  }
+}
+
+/*media portada*/
+@media only screen and (min-width: 320px) and (max-width: 1150px) {
+  .carousel-inner .carousel-item {
+    height: auto;
+  }
+}
+
+/* media de HOME */
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .seleccion {
+        grid-template-areas: "conjuntos tops" "seleccionTres seleccionTres";
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+  .seleccion .seleccionConjuntos {
+    padding-bottom: 8px;
+  }
+  .seleccion .seleccionConjuntos .conjuntos {
+    width: 90%;
+    height: 90%;
+  }
+  .seleccion .seleccionTops {
+    padding-left: 0%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .seleccion .seleccionTops .tops {
+    width: 90%;
+    height: 90%;
+  }
+  .redesSociales a .instagramHome {
+    height: auto;
+  }
+  .redesSociales a .instagramHome img {
+    width: 20px;
+    height: auto;
+    padding-bottom: 10px;
+  }
+  .redesSociales a .instagramHome h1 {
+    font-size: 35px;
+  }
+}
+
+@media only screen and (min-width: 416px) and (max-width: 576px) {
+  .seleccion {
+        grid-template-areas: "conjuntos tops" "seleccionTres seleccionTres" "seleccionTres seleccionTres";
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+  }
+  .seleccion .tituloSeleccion a {
+    font-size: 30px;
+  }
+  .seleccion .seleccionConjuntos {
+    padding-bottom: 8px;
+  }
+  .seleccion .seleccionConjuntos .conjuntos {
+    width: 90%;
+    height: 90%;
+  }
+  .seleccion .seleccionTops {
+    padding-left: 0%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .seleccion .seleccionTops .tops {
+    width: 90%;
+    height: 90%;
+  }
+  .seleccion .seleccionTres {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .seleccion .seleccionTres .seleccionCalzas, .seleccion .seleccionTres .seleccionRemeras, .seleccion .seleccionTres .seleccionShorts {
+    width: 50%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .seleccion .seleccionTres .seleccionCalzas, .seleccion .seleccionTres .seleccionShorts {
+    padding-right: 10px;
+  }
+  .redesSociales {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .redesSociales a .instagramHome {
+    height: auto;
+  }
+  .redesSociales a .instagramHome img {
+    width: 20px;
+    height: auto;
+    padding-bottom: 10px;
+  }
+  .redesSociales a .instagramHome h1 {
+    font-size: 30px;
+  }
+  .redesSociales .instagramHome:hover {
+    -webkit-transform: scale(1.04);
+            transform: scale(1.04);
+  }
+  .redesSociales .instagramSeguinos {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 416px) {
+  .seleccion {
+    height: auto;
+    margin-top: 20px;
+        grid-template-areas: "conjuntos" "tops" "seleccionTres"  "seleccionTres" "seleccionTres";
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (150px)[5];
+        grid-template-rows: repeat(5, 150px);
+  }
+  .seleccion .tituloSeleccion a {
+    font-size: 25px;
+  }
+  .seleccion .seleccionConjuntos {
+    padding-bottom: 15px;
+  }
+  .seleccion .seleccionConjuntos .conjuntos {
+    width: 70%;
+    height: 100%;
+    -webkit-box-shadow: 3px 3px 3px;
+            box-shadow: 3px 3px 3px;
+  }
+  .seleccion .seleccionTops {
+    padding-left: 0%;
+    padding-bottom: 15px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .seleccion .seleccionTops .tops {
+    width: 70%;
+    height: 100%;
+    -webkit-box-shadow: 3px 3px 3px;
+            box-shadow: 3px 3px 3px;
+  }
+  .seleccion .seleccionTres {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .seleccion .seleccionTres .seleccionCalzas, .seleccion .seleccionTres .seleccionRemeras, .seleccion .seleccionTres .seleccionShorts {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-right: 5px;
+  }
+  .seleccion .seleccionTres .seleccionCalzas .calzas {
+    width: 71.3%;
+    height: 100%;
+    -webkit-box-shadow: 3px 3px 3px;
+            box-shadow: 3px 3px 3px;
+  }
+  .seleccion .seleccionTres .seleccionRemeras .remeras {
+    width: 71.3%;
+    height: 100%;
+    -webkit-box-shadow: 3px 3px 3px;
+            box-shadow: 3px 3px 3px;
+  }
+  .seleccion .seleccionTres .seleccionShorts .shorts {
+    width: 71.3%;
+    height: 100%;
+    -webkit-box-shadow: 3px 3px 3px;
+            box-shadow: 3px 3px 3px;
+  }
+  .redesSociales {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .redesSociales a .instagramHome {
+    height: auto;
+  }
+  .redesSociales a .instagramHome img {
+    width: 15px;
+    height: auto;
+    padding-bottom: 5px;
+  }
+  .redesSociales a .instagramHome h1 {
+    font-size: 25px;
+  }
+  .redesSociales .instagramHome:hover {
+    -webkit-transform: scale(1.04);
+            transform: scale(1.04);
+  }
+  .redesSociales .instagramSeguinos {
+    font-size: 18px;
+  }
+}
+
+/* css titulo secciones */
+.tituloSeccion {
+  font-size: 25px;
+  text-align: center;
+  font-family: 'Petit Formal Script', cursiva;
+  font-style: italic;
+  background-color: rgba(0, 0, 0, 0.15);
+  padding-top: 0px;
+  margin-left: 400px;
+  margin-right: 400px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1250px) {
+  .tituloSeccion {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 700px) {
+  .tituloSeccion {
+    margin-left: 90px;
+    margin-right: 90px;
+  }
+}
+
+/*INICIO SECCIONES*/
+/* INICIO SECCION REGALA */
+.giftCard {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.gift--card1 {
+  background-color: #e8c2ca;
+  width: 400px;
+  height: 300px;
+  margin-bottom: 50px;
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gift--card1 p {
+  font-family: 'Lora', serif;
+  font-size: 40px;
+  text-align: center;
+  line-height: 1;
+}
+
+.gift--card1 p span {
+  font-size: 25px;
+}
+
+.gift--card2 {
+  background-color: rgba(0, 0, 0, 0.15);
+  width: 400px;
+  height: 300px;
+  margin-bottom: 50px;
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gift--card2 p {
+  font-family: 'Lora', serif;
+  font-size: 40px;
+  text-align: center;
+  line-height: 1;
+}
+
+.gift--card2 p span {
+  font-size: 25px;
+}
+
+.gift--card3 {
+  background-color: #E7B7C1;
+  width: 400px;
+  height: 300px;
+  margin-bottom: 50px;
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gift--card3 p {
+  font-family: 'Lora', serif;
+  font-size: 40px;
+  text-align: center;
+  line-height: 1;
+}
+
+.gift--card3 p span {
+  font-size: 25px;
+}
+
+/* INICIO SECCION PRODUCTOS */
+.igProd {
+  text-align: right;
+}
+
+.igProd a {
+  text-decoration: none;
+  text-align: right;
+  width: 100%;
+}
+
+.igProd a img {
+  width: 25px;
+  height: auto;
+  padding-bottom: 2px;
+}
+
+.instagramProductos {
+  grid-area: instagram;
+  font-size: 22px;
+  text-align: left;
+  padding-right: 8px;
+  font-family: "Lora", serif;
+  font-style: italic;
+  color: #E7B7C1;
+  display: inline-block;
+}
+
+.productos {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.productos .producto {
+  width: 100%;
+  height: 430px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.productos .producto .imgProducto {
+  width: 100%;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.productos .producto .imgProducto img {
+  width: auto;
+  height: 95%;
+}
+
+.productos .producto .datosProducto {
+  height: 20%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.productos .producto .datosProducto .nombreProducto {
+  text-align: center;
+}
+
+.productos .producto .datosProducto .nombreProducto p {
+  margin-bottom: 0%;
+  line-height: 1.3;
+}
+
+.productos .producto .datosProducto .nombreProducto .nombreP {
+  font-family: "Merriweather", serif;
+  font-size: 20px;
+}
+
+.productos .producto .datosProducto .nombreProducto .precio {
+  color: rgba(52, 58, 64, 0.7);
+}
+
+.productos .producto .datosProducto .agregar {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5px;
+}
+
+.productos .producto .datosProducto .agregar p {
+  font-family: "Lora", serif;
+  border-radius: 10px;
+  border: solid rgba(0, 0, 0, 0.15);
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-top: 2px;
+}
+
+.productos .producto .datosProducto .agregar p:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+/* INICIO SECCION CONTACTO*/
+.formularioContacto {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+div textarea {
+  height: 150px;
+  width: 100%;
+}
+
+.enviar {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.botonEnviar {
+  background-color: #e8c2ca;
+  border: none;
+}
+
+.botonEnviar:hover {
+  color: #e8c2ca;
+  background-color: white;
+  border: 2px solid #e8c2ca;
+}
+/*# sourceMappingURL=estilos.css.map */

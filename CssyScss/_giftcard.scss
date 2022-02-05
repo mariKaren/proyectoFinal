@@ -1,0 +1,40 @@
+.giftCard{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+// .giftCard:hover{
+//     @extend .instagramHome:hover ;
+// }
+$giftCards: (
+    card1: $color3,
+    card2: $colorNav,
+    card3: $color2,
+);
+@each $card, $color in $giftCards {
+    .gift--#{$card}{
+        background-color: $color;
+        width: 400px;
+        height: 300px;
+        margin-bottom: 50px;
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        p{
+            font-family: 'Lora', serif;
+            font-size: 40px;
+            text-align: center;  
+            line-height: 1;
+            span{
+                font-size: 25px;
+            }
+        }
+       
+    }
+      
+}
