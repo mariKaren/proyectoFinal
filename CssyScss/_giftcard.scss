@@ -8,6 +8,9 @@
     div{
         width: 400px;
         height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin-bottom: 50px;
         margin-top: 40px;
         img{
@@ -15,12 +18,41 @@
             height: auto;
         }
     }
+    div:hover{
+    transform: scale(1.10);
+    transition: all 0.5s;   
+    }
 }
-@media only screen and (min-width:900px) and (max-width: 1200px) {
+
+@media only screen and (min-width:910px) and (max-width: 1210px) {
     .giftCard{
         div{
             width: 300px;
             height: 300px;
+        }
+    }
+}
+@media only screen and (min-width:760px) and (max-width: 910px) {
+    .giftCard{
+        div{
+            width: 250px;
+            height: 250px;
+        }
+    }
+}
+@media only screen and (min-width:400px) and (max-width: 760px) {
+    .giftCard{
+        div{
+            width: 300px;
+            height: 200px;
+        }
+    }
+}
+@media only screen and (max-width:400px) {
+    .giftCard{
+        div{
+            width: 250px;
+            height: 150px;
         }
     }
 }

@@ -8,7 +8,7 @@ $colorNav: rgba(0, 0, 0, 0.15);
 $colorMenu:rgba(0, 0, 0, 0.15);
 $colorMenu2:rgba(0, 0, 0, 0.30);
 $color2:#E7B7C1;
-$color3:#e8c2ca;
+$color3:#f4acb7;
 $cletra1: black;
 $cletra2: rgba(0, 0, 0, 0.7);
 $cletra3:rgba(52, 58, 64, 0.7);
@@ -37,6 +37,7 @@ header {
         width: 100%;
         height: 30px;
         background-color: $color3;
+        color: $color1;
         margin-bottom: -6px;
 
         p {
@@ -563,7 +564,7 @@ footer {
     padding-top: 0px;
     color: $cletra2;
     span{
-        background-color: $color2;
+        background-color: $color3;
         padding-left: 100px;
         padding-right: 100px;
     }
