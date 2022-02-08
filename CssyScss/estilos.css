@@ -954,9 +954,6 @@ footer .copyRight {
   .productos .producto {
     height: 480px;
   }
-  .productos .short {
-    padding-left: 100px;
-  }
 }
 
 @media only screen and (min-width: 300px) and (max-width: 420px) {
